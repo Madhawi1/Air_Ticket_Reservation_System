@@ -29,13 +29,19 @@
 			@endif
 		</div>
 		<div class="field">
-			Telephone:<input type="text" name="telephone" {{(Input::old('telephone'))?'value="' . e(Input::old('telephone')) . '"':''}}>
-			@if($errors->has("telephone"))
-				{{$errors->first("telephone")}}
+			Telephone:<input type="text" name="telephonenum" {{(Input::old('telephonenum'))?'value="' . e(Input::old('telephonenum')) . '"':''}}>
+			@if($errors->has("telephonenum"))
+				{{$errors->first("telephonenum")}}
+			@endif
+		</div>
+		<div class="field">
+			Passport No:<input type="text" name="passportnum" {{(Input::old('passportnum'))?'value="' . e(Input::old('passportnum')) . '"':''}}>
+			@if($errors->has("passportnum"))
+				{{$errors->first("passportnum")}}
 			@endif
 		</div>
 		
-	<input type="submit" value="Find flights">
+	<input type="submit" value="Save">
 	{{Form::token()}}
 	</form>
 @stop

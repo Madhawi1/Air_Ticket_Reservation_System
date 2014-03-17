@@ -4,7 +4,7 @@ class HomeController extends BaseController {
 
 	public function home()
 	{
-		echo 'Hello ',$user=User::find(1)-> FirstName;
+		//echo 'Hello ',$user=User::find(1)-> FirstName;
 
 		/*Mail::send('emails.auth.test',array('name'=> 'AAA'),function($message){
 
