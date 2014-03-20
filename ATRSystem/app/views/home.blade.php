@@ -1,5 +1,5 @@
 @extends('layout.main')
 
 @section('content')
-	Welcome to Gagana Air Ticket Reservation System !
+	Welcome to Air Ticket Reservation System !
 @stop
